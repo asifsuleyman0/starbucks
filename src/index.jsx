@@ -9,6 +9,7 @@ import Giftcards from './Pages/Giftcards'
 import CreateGift from './Components/CreateGift'
 import CategoryDetail from './Components/SubMenus'
 import ProductDetail from './Components/Details'
+import List from './Components/List'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -16,7 +17,7 @@ createRoot(document.getElementById('root')).render(
     <Routes>
         <Route path='/' element={<Main/>} />
         <Route path='/menu' element={<Menu />}>
-          <Route index element={<CategoryDetail />} />
+          <Route index element={<List />} />
           <Route path=":categoryId" element={<CategoryDetail />} />
         </Route>
         <Route path="/menu/:categoryId/product/:id" element={<ProductDetail />} />
