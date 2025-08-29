@@ -8,7 +8,7 @@ const Header = () => {
   const navigationItems = [
     { href: "/menu", label: "Menu" },
     { href: "/rewards", label: "Rewards" },
-    { href: "/gift-cards", label: "Gift Cards" }
+    { href: "/gift", label: "Gift Cards" }
   ];
 
   const toggleMenu = () => {

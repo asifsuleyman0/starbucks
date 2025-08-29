@@ -46,9 +46,9 @@ const Footer = () => {
           ))}
         </div>
         <div className="space-y-4 mb-8">
-          <div className="flex flex-wrap gap-x-6 gap-y-2">
+          <div className="flex">
             {footerData?.legalLinks?.map((link, index) => (
-              <a key={index} href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200 underline">{link}</a>
+              <a key={index} href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200  hover:underline">{link}</a>
             ))}
           </div>
         </div>

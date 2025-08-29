@@ -1,13 +1,13 @@
-import List from "../Components/List"
-import Menus from "../Components/Menus"
+import Menus from "../Components/Menus";
+import { Outlet } from "react-router-dom";
 
 const Menu = () => {
   return (
     <div className="flex">
-      <Menus/>
-      <List/>
+      <Menus />
+      <Outlet />
     </div>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;
