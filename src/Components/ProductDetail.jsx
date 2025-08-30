@@ -131,15 +131,7 @@ const ProductDetail = () => {
 
             <div className="lg:flex-shrink-0 lg:w-auto">
               <div className="flex flex-col sm:flex-row lg:flex-col gap-3 sm:gap-4 lg:gap-3 justify-center lg:justify-start">
-                <button className="flex items-center justify-center px-4 sm:px-5 md:px-6 lg:px-5 xl:px-6 py-2 sm:py-3 lg:py-2 xl:py-3 rounded-full border-2 darkgreen font-bold text-white text-sm md:text-base lg:text-sm xl:text-base w-full sm:w-auto lg:w-40 xl:w-44 hover:bg-green-50 hover:text-green-900 transition-colors">
-                  <span className="mr-2">
-                    <SlMagicWand className="text-yellow-300 text-sm md:text-base lg:text-sm xl:text-base"/>
-                  </span>
-                  Customize
-                </button>
-                <button 
-                  onClick={handleAddToCart}
-                  disabled={isAdding}
+                <button onClick={handleAddToCart} disabled={isAdding}
                   className={`flex items-center justify-center px-4 sm:px-5 md:px-6 lg:px-5 xl:px-6 py-2 sm:py-3 lg:py-2 xl:py-3 rounded-full border-2 font-bold text-white text-sm md:text-base lg:text-sm xl:text-base w-full sm:w-auto lg:w-40 xl:w-44 transition-all duration-300 ${
                     isAdding 
                       ? 'bg-green-700 border-green-700 scale-95' 

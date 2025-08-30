@@ -52,11 +52,6 @@ const Gift = () => {
       </h1>
       <header className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6 sm:mb-8">
         <h2 className="font-bold text-lg sm:text-xl lg:text-2xl text-gray-900">{section.name}</h2>
-        <button className="text-green-600 hover:text-green-700 text-sm sm:text-base font-medium transition-colors duration-200 self-start sm:self-center group">
-          <span className="border-b border-transparent group-hover:border-green-600 transition-colors duration-200">
-            See all
-          </span>
-        </button>
       </header>
 
       <div className="relative">
