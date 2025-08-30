@@ -17,33 +17,22 @@ const GiftList = () => {
   }, []);
 
   return (
-    <div className="mx-32 my-16">
+    <div className="mx-4 sm:mx-8 lg:mx-16 xl:mx-32 my-16">
       <h1 className="font-bold text-4xl mb-10">Gift cards</h1>
 
       {gifts.map((section, i) => (
         <div key={i} className="mb-12">
           <h2 className="font-bold text-2xl text-gray-900 mb-6">{section.name}</h2>
-
-          <div className="flex flex-wrap gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {section.eGifts?.length ? (
               section.eGifts.map((item, j) => (
-                <div
-                  key={j}
-                  className="overflow-hidden rounded-xl hover:-translate-y-2 transition-transform duration-300 cursor-pointer"
-                  onClick={() =>
-                    navigate(`/gift/${item.productNumber}`, { state: item })
-                  }
-                >
-                  <img
-                    src={item.largeImageUrl}
-                    alt={item.altText}
-                    className="w-64 h-40 object-cover"
-                    loading="lazy"
-                  />
+                <div key={j} className="w-full hover:-translate-y-2 transition-transform duration-300"
+                  onClick={() => navigate(`/gift/${item.productNumber}`, { state: item })}>
+                  <img src={item.largeImageUrl} alt={item.altText} className="w-full h-full rounded-2xl object-contain" loading="lazy"/>
                 </div>
               ))
             ) : (
-              <p className="text-gray-500">No gifts available.</p>
+              <p className="text-gray-500 col-span-full">No gifts available.</p>
             )}
           </div>
         </div>

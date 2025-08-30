@@ -60,5 +60,14 @@ export const footerData = {
     "CA Supply Chain Act",
     "Accessibility",
     "Cookie Preferences"
+  ],
+  socialLinks: [
+    "Privacy Notice",
+    "Consumer Health Privacy Notice", 
+    "Terms of Use",
+    "Do Not Share My Personal Information",
+    "CA Supply Chain Act",
+    "Accessibility",
+    "Cookie Preferences"
   ]
 };
